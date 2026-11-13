@@ -815,7 +815,8 @@
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
+    .nav-links { display: flex; }
+    .nav-links li:not(.nav-wiki) { display: none; }
     .pitch-grid { grid-template-columns: 1fr; gap: 3rem; }
     .stats-row { grid-template-columns: repeat(2, 1fr); }
     .pillars-grid { grid-template-columns: 1fr; }
@@ -848,6 +849,7 @@
     <li><a href="#pillars">Timeline</a></li>
     <li><a href="#lore">Universe</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li class="nav-wiki"><a href="/wiki/">Wiki</a></li>
     <li><a href="#wishlist">Wishlist</a></li>
   </ul>
 </nav>
